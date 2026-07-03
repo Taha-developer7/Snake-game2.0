@@ -1,0 +1,74 @@
+/* Core Structural Enhancements & Premium Real Estate Styles */
+body {
+    font-family: 'Rajdhani', sans-serif;
+    background: radial-gradient(circle at center, #0a0b10 0%, #020205 100%);
+}
+
+.font-orbitron {
+    font-family: 'Orbitron', sans-serif;
+}
+
+/* Glassmorphism System Specs */
+.glass-panel {
+    background: rgba(10, 12, 22, 0.45);
+    backdrop-filter: blur(16px) saturate(120%);
+    -webkit-backdrop-filter: blur(16px) saturate(120%);
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 8px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.glass-card {
+    background: rgba(15, 18, 36, 0.65);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+    border: 1px solid rgba(0, 243, 255, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 0 50px rgba(0, 243, 255, 0.05), inset 0 0 20px rgba(255, 255, 255, 0.02);
+}
+
+/* State Management Selectors */
+.hidden-state {
+    display: none !important;
+}
+
+/* Custom Component Controls */
+.btn-diff {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    padding: 0.75rem 0.5rem;
+    font-weight: 700;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    border-radius: 4px;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    color: #94a3b8;
+}
+
+.btn-diff:hover {
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+}
+
+.btn-diff.active {
+    background: rgba(6, 182, 212, 0.15);
+    border-color: #00f3ff;
+    color: #00f3ff;
+    box-shadow: 0 0 15px rgba(0, 243, 255, 0.25);
+}
+
+/* Typographic Display FX */
+.dropping-glow {
+    filter: drop-shadow(0 0 12px rgba(6, 182, 212, 0.6));
+}
+
+@keyframes pulse-glow {
+    0%, 100% { filter: drop-shadow(0 0 8px rgba(236,72,153,0.4)); }
+    50% { filter: drop-shadow(0 0 20px rgba(236,72,153,0.8)); }
+}
+
+.dynamic-pulse {
+    animation: pulse-glow 2s infinite;
+}
